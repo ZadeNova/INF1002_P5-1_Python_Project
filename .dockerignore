@@ -1,0 +1,13 @@
+.git
+.gitignore
+.DS_Store
+
+
+venv/
+data/CSV/
+__pycache__/
+*.pyc
+*.pyo
+
+data/CSV/
+data/user_data/
