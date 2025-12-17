@@ -1,12 +1,31 @@
-# 📊 BullBearAnalysis
+# 📈 BullBear Analysis
 
-An app that is able to display technical indicators to identify stock trends and calculate portfolio networth using Streamlit.
----
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 
 ## 📈 Project Overview
 
 This system performs sophisticated technical analysis on historical stock data, implementing algorithms for trend identification, profitability analysis, and interactive visualization. Built with modular, production-ready code following software engineering best practices.
+
+**BullBear Analysis** is a comprehensive financial dashboard built with Python and Streamlit. It enables users to perform technical analysis on major stock indices and tech giants (AAPL, MSFT, etc.).
+The application leverages **TA-Lib** for high-performance technical indicator calculations.
+
+---
+
+## 🚀 Quick Start (Recommended: Docker)
+
+The easiest way to run this application is via Docker. This avoids the complex setup required for the TA-Lib C-library.
+
+### 1. Run the Container
+You can pull the pre-built image directly from Docker Hub and run it with a single command:
+
+```bash
+docker run -d -p 8501:8501 zadenova/bullbear-analysis:latest
+```
+
 
 ## 🚀 Features
 
@@ -69,8 +88,8 @@ This system performs sophisticated technical analysis on historical stock data, 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
-cd project-name
+git clone [https://github.com/zadenova/inf1002_p5-1_python_project.git](https://github.com/zadenova/inf1002_p5-1_python_project.git)
+cd inf1002_p5-1_python_project
 ```
 
 ### 2. Create a virtual environment
