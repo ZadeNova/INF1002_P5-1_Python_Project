@@ -52,33 +52,38 @@ docker run -d -p 8501:8501 zadenova/bullbear-analysis:latest
 
 ```
 .
+.
 ├── data/                        → Stores datasets and user portfolio data
-│ ├── CSV/                       → Cached/stored stock data in CSV format
-│ └── user_data/                 → User-specific data (e.g., portfolio_Test.json)
+│   ├── CSV/                     → Cached/stored stock data (e.g., AAPL.csv)
+│   └── user_data/               → User-specific data (e.g., portfolio_test.json)
 │
 ├── pages/                       → Streamlit multi-page app scripts
-│ └── portfolio_tracker.py
+│   └── portfolio_tracker.py
 │
-├── src/ → Core source code
-│ ├── analytics.py               → Financial analytics functions
-│ ├── config.py                  → Configuration settings
-│ ├── data_loader.py             → Data fetching and preprocessing
-│ ├── helper.py                  → Utility/helper functions
-│ ├── run_loader.py              → Script for bulk loading data
-│ ├── technical_indicators.py    → Technical analysis functions
-│ └── visualization.py           → Plotting and charting functions
+├── src/                         → Core source code
+│   ├── __init__.py
+│   ├── analytics.py             → Financial analytics functions
+│   ├── config.py                → Configuration settings
+│   ├── data_loader.py           → Data fetching and preprocessing
+│   ├── helper.py                → Utility/helper functions
+│   ├── run_loader.py            → Script for bulk loading data
+│   ├── technical_indicators.py  → Technical analysis functions (TA-Lib)
+│   ├── ticker_utils.py          → Ticker symbol management
+│   └── visualization.py         → Plotting and charting functions
 │
 ├── tests/                       → Unit tests
-│ ├── test_analytics.py
-│ └── test_data_loader.py
+│   ├── test_analytics.py
+│   └── test_technical_indicators.py
 │
-├── validation/                   → Validation scripts to compare calculations
-│ └── validation.py
+├── validation/                  → Validation scripts to compare calculations
+│   └── validation.py
 │
-├── app.py                        → Main Streamlit entry point
-├── requirements.txt              → Python dependencies
-├── README.md                     → Project documentation
-└── .gitignore                    → Git ignore rules
+├── app.py                       → Main Streamlit entry point
+├── Dockerfile                   → Docker configuration
+├── requirements.txt             → Python dependencies
+├── README.md                    → Project documentation
+├── .dockerignore                → Docker build exclusion list
+└── .gitignore                   → Git ignore rules
 ```
 
 ---
@@ -88,7 +93,7 @@ docker run -d -p 8501:8501 zadenova/bullbear-analysis:latest
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/zadenova/inf1002_p5-1_python_project.git](https://github.com/zadenova/inf1002_p5-1_python_project.git)
+git clone https://github.com/ZadeNova/INF1002_P5-1_Python_Project.git
 cd inf1002_p5-1_python_project
 ```
 
